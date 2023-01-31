@@ -27,7 +27,7 @@ namespace JK_saldumi_31_01
             double naudas_daudzums_eur = Convert.ToInt32(this.naudas_ievade.Text);
             double rezultats_eur = 0;
             rezultats_eur = naudas_daudzums_eur /9.88;
-            rezultats_eur = rezultats_eur+ Math.Round(rezultats_eur, 2);
+            rezultats_eur = Math.Round(rezultats_eur, 2);
             this.rezultats.Text = rezultats_eur.ToString();
      
 
