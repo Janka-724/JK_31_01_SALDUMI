@@ -1,0 +1,10 @@
+Z:\11kl\JK_saldumi_31_01\JK_saldumi_31_01\bin\Debug\JK_saldumi_31_01.exe.config
+Z:\11kl\JK_saldumi_31_01\JK_saldumi_31_01\bin\Debug\JK_saldumi_31_01.exe
+Z:\11kl\JK_saldumi_31_01\JK_saldumi_31_01\bin\Debug\JK_saldumi_31_01.pdb
+Z:\11kl\JK_saldumi_31_01\JK_saldumi_31_01\obj\Debug\JK_saldumi_31_01.csprojAssemblyReference.cache
+Z:\11kl\JK_saldumi_31_01\JK_saldumi_31_01\obj\Debug\JK_saldumi_31_01.Form1.resources
+Z:\11kl\JK_saldumi_31_01\JK_saldumi_31_01\obj\Debug\JK_saldumi_31_01.Properties.Resources.resources
+Z:\11kl\JK_saldumi_31_01\JK_saldumi_31_01\obj\Debug\JK_saldumi_31_01.csproj.GenerateResource.cache
+Z:\11kl\JK_saldumi_31_01\JK_saldumi_31_01\obj\Debug\JK_saldumi_31_01.csproj.CoreCompileInputs.cache
+Z:\11kl\JK_saldumi_31_01\JK_saldumi_31_01\obj\Debug\JK_saldumi_31_01.exe
+Z:\11kl\JK_saldumi_31_01\JK_saldumi_31_01\obj\Debug\JK_saldumi_31_01.pdb
