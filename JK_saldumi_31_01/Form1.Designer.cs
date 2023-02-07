@@ -52,14 +52,13 @@
             this.naudas_ievade.Name = "naudas_ievade";
             this.naudas_ievade.Size = new System.Drawing.Size(118, 20);
             this.naudas_ievade.TabIndex = 1;
-            this.naudas_ievade.Text = "56";
             this.naudas_ievade.TextChanged += new System.EventHandler(this.naudas_ievade_TextChanged);
             // 
             // aprekinat
             // 
             this.aprekinat.BackColor = System.Drawing.Color.DarkTurquoise;
             this.aprekinat.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.aprekinat.Location = new System.Drawing.Point(432, 168);
+            this.aprekinat.Location = new System.Drawing.Point(447, 96);
             this.aprekinat.Name = "aprekinat";
             this.aprekinat.Size = new System.Drawing.Size(144, 68);
             this.aprekinat.TabIndex = 2;
