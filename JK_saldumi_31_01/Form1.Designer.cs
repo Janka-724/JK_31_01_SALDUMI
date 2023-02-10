@@ -42,6 +42,7 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.SuspendLayout();
             // 
             // aprekinat
@@ -60,7 +61,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Gold;
+            this.label1.BackColor = System.Drawing.Color.Crimson;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.label1.Location = new System.Drawing.Point(279, 18);
             this.label1.Name = "label1";
@@ -141,14 +142,14 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.label2.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label2.Location = new System.Drawing.Point(521, 70);
+            this.label2.Location = new System.Drawing.Point(501, 70);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(267, 18);
+            this.label2.Size = new System.Drawing.Size(287, 18);
             this.label2.TabIndex = 13;
-            this.label2.Text = "katra salduma tev sanaca sitik skaistulit";
+            this.label2.Text = "katra salduma tev sanaca sitik kg skaistulit";
             // 
             // textBox4
             // 
@@ -183,12 +184,16 @@
             this.label3.Text = "taka jums nav bijis advencets programetajs , tad, gadijuma ja nevelieties noteikt" +
     "o saldumu tur ievadiet 0, paldies";
             // 
+            // colorDialog1
+            // 
+            this.colorDialog1.Color = System.Drawing.Color.WhiteSmoke;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.Pink;
+            this.ClientSize = new System.Drawing.Size(964, 450);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
@@ -228,6 +233,7 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ColorDialog colorDialog1;
     }
 }
 

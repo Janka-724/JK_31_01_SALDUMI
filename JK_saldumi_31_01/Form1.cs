@@ -94,28 +94,48 @@ namespace JK_saldumi_31_01
         }
         private void aprekinasana_selga(double selgas_daudzums)
         {
-            double naudas_daudzums_eur = Convert.ToDouble(this.textBox1.Text);
-            double rezultats_eur = 0;
-            rezultats_eur = naudas_daudzums_eur / 5;
-            rezultats_eur = Math.Round(rezultats_eur, 2);
-            this.textBox4.Text = rezultats_eur.ToString();
+            try
+            {
+                double naudas_daudzums_eur = Convert.ToDouble(this.textBox1.Text);
+                double rezultats_eur = 0;
+                rezultats_eur = naudas_daudzums_eur / 5;
+                rezultats_eur = Math.Round(rezultats_eur, 2);
+                this.textBox4.Text = rezultats_eur.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
         private void aprekinasana_barbelite(double barbelites_daudzums)
         {
-            double naudas_daudzums_eur = Convert.ToDouble(this.textBox2.Text);
-            double rezultats_eur = 0;
-            rezultats_eur = naudas_daudzums_eur / 7;
-            rezultats_eur = Math.Round(rezultats_eur, 2);
-            this.textBox5.Text = rezultats_eur.ToString();
+            try
+            {
+                double naudas_daudzums_eur = Convert.ToDouble(this.textBox2.Text);
+                double rezultats_eur = 0;
+                rezultats_eur = naudas_daudzums_eur / 7;
+                rezultats_eur = Math.Round(rezultats_eur, 2);
+                this.textBox5.Text = rezultats_eur.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show (ex.Message);
+            }
         }
         private void aprekinasana_special(double special_daudzums)
         {
-            double naudas_daudzums_eur = Convert.ToDouble(this.textBox3.Text);
-            double rezultats_eur = 0;
-            rezultats_eur = naudas_daudzums_eur / 5;
-            rezultats_eur = Math.Round(rezultats_eur, 2);
-            this.textBox6.Text = rezultats_eur.ToString();
-
+            try
+            {
+                double naudas_daudzums_eur = Convert.ToDouble(this.textBox3.Text);
+                double rezultats_eur = 0;
+                rezultats_eur = naudas_daudzums_eur / 5;
+                rezultats_eur = Math.Round(rezultats_eur, 2);
+                this.textBox6.Text = rezultats_eur.ToString();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
