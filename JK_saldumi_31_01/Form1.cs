@@ -98,9 +98,17 @@ namespace JK_saldumi_31_01
             {
                 double naudas_daudzums_eur = Convert.ToDouble(this.textBox1.Text);
                 double rezultats_eur = 0;
-                rezultats_eur = naudas_daudzums_eur / 5;
-                rezultats_eur = Math.Round(rezultats_eur, 2);
-                this.textBox4.Text = rezultats_eur.ToString();
+                if (naudas_daudzums_eur.ToString().All(char.IsDigit))
+                {
+                    rezultats_eur = naudas_daudzums_eur / 5;
+                    rezultats_eur = Math.Round(rezultats_eur, 2);
+                    this.textBox4.Text = rezultats_eur.ToString();
+                }
+                else
+                {
+                    Console.WriteLine("ievadi ciparus");
+
+                }
             }
             catch (Exception ex)
             {
@@ -111,11 +119,19 @@ namespace JK_saldumi_31_01
         {
             try
             {
+
                 double naudas_daudzums_eur = Convert.ToDouble(this.textBox2.Text);
                 double rezultats_eur = 0;
-                rezultats_eur = naudas_daudzums_eur / 7;
-                rezultats_eur = Math.Round(rezultats_eur, 2);
-                this.textBox5.Text = rezultats_eur.ToString();
+                if (naudas_daudzums_eur.ToString().All(char.IsDigit))
+                {
+                    rezultats_eur = naudas_daudzums_eur / 7;
+                    rezultats_eur = Math.Round(rezultats_eur, 2);
+                    this.textBox5.Text = rezultats_eur.ToString();
+                }
+                else
+                {
+                }
+                    Console.WriteLine("ievadi ciparus");
             }
             catch (Exception ex)
             {
@@ -128,9 +144,18 @@ namespace JK_saldumi_31_01
             {
                 double naudas_daudzums_eur = Convert.ToDouble(this.textBox3.Text);
                 double rezultats_eur = 0;
-                rezultats_eur = naudas_daudzums_eur / 5;
-                rezultats_eur = Math.Round(rezultats_eur, 2);
-                this.textBox6.Text = rezultats_eur.ToString();
+                if (naudas_daudzums_eur.ToString().All(char.IsDigit))
+                {
+
+                    rezultats_eur = naudas_daudzums_eur / 5;
+                    rezultats_eur = Math.Round(rezultats_eur, 2);
+                    this.textBox6.Text = rezultats_eur.ToString();
+                }
+                else
+                {
+                    Console.WriteLine("ievadi ciparus");
+
+                }
             }
             catch(Exception ex)
             {
