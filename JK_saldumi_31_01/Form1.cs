@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace JK_saldumi_31_01
 {
@@ -29,6 +30,7 @@ namespace JK_saldumi_31_01
             aprekinasana_selga(0);
             aprekinasana_barbelite(0);
             aprekinasana_special(0);
+            ierakstisana_faila();
 
         }
 
@@ -162,7 +164,35 @@ namespace JK_saldumi_31_01
                 MessageBox.Show(ex.Message);
             }
         }
+        void ierakstisana_faila()
+        {
+            string vards = this.texBoxvards.Text;
+            string failanosaukums = vards + "_" + DateTime.Now.ToString("ddMMyyyy") + "_ceks.txt";
+            string datums = DateTime.Now.ToString("dd.MM.yyyy HH.MM.ss");
 
+            string selgacepums = Convert.ToString(textBox4.Text);
+            string nauda_selga = Convert.ToString(textBox1.Text);
+            string ierakstit_selgacepums = "Iegadajas " + selgacepums + " kg cepumi selga, pa " + nauda_selga + "eur"; 
+
+            string barbelite = Convert.ToString(textBox5.Text);
+            string nauda_barbelite = Convert.ToString(textBox2.Text);
+            string ierakstit_barbelite = "Iegadajas " + barbelite + " kg konfektes Jura, pa " + nauda_barbelite + "eur"; 
+
+            string specialas = Convert.ToString(textBox6.Text);
+            string nauda_specialas = Convert.ToString(textBox3.Text);
+            string ierakstit_specialas = "Iegadajas " + specialas + " kg konfektes Specialas, pa " + nauda_specialas + "eur";
+
+           
+
+            StreamWriter musu_faila_rakstitajs = new StreamWriter(failanosaukums);
+            musu_faila_rakstitajs.WriteLine(datums);
+            musu_faila_rakstitajs.WriteLine(vards);
+            musu_faila_rakstitajs.WriteLine(ierakstit_selgacepums);
+            musu_faila_rakstitajs.WriteLine(ierakstit_barbelite);
+            musu_faila_rakstitajs.WriteLine(ierakstit_specialas);
+            musu_faila_rakstitajs.WriteLine("Paldies par pirkumu!");
+            musu_faila_rakstitajs.Close();
+        }
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
 
@@ -174,6 +204,21 @@ namespace JK_saldumi_31_01
         }
 
         private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }

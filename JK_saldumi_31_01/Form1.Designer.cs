@@ -43,6 +43,11 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.texBoxvards = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // aprekinat
@@ -177,16 +182,63 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(35, 327);
+            this.label3.Location = new System.Drawing.Point(35, 390);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(531, 13);
             this.label3.TabIndex = 17;
             this.label3.Text = "taka jums nav bijis advencets programetajs , tad, gadijuma ja nevelieties noteikt" +
     "o saldumu tur ievadiet 0, paldies";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // colorDialog1
             // 
             this.colorDialog1.Color = System.Drawing.Color.WhiteSmoke;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(190, 174);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(28, 13);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "euro";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(190, 215);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(28, 13);
+            this.label9.TabIndex = 19;
+            this.label9.Text = "euro";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(190, 249);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(28, 13);
+            this.label10.TabIndex = 20;
+            this.label10.Text = "euro";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.label11.Location = new System.Drawing.Point(54, 286);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(349, 24);
+            this.label11.TabIndex = 21;
+            this.label11.Text = "ludzu ievadiet savu vardu godatais klient!";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
+            // texBoxvards
+            // 
+            this.texBoxvards.Location = new System.Drawing.Point(61, 331);
+            this.texBoxvards.Name = "texBoxvards";
+            this.texBoxvards.Size = new System.Drawing.Size(100, 20);
+            this.texBoxvards.TabIndex = 22;
             // 
             // Form1
             // 
@@ -194,6 +246,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(964, 450);
+            this.Controls.Add(this.texBoxvards);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
@@ -234,6 +291,11 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox texBoxvards;
     }
 }
 
